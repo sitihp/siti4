@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SIPDB Mobile</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.1.min.css">
+	<link rel="stylesheet" href="demo/css/jqm-demos.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script type="text/javascript" charset="utf-8" src="cordova-2.6.0.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="demo/js/jquery.mobile.demos.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="proses/prosessetuju.js"></script>
+</head>
+<body style="background-color:#CCC;">
+<div data-role="page" class="jqm-demos">
+
+   <!-- <div data-role="header" class="jqm-header" data-position="fixed">
+		<h1 class="jqm-logo"><a href="#"><img src="demo/img/jquery-logo-2.png" alt="jQuery Mobile Framework"></a></h1>
+        <a href="#" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
+	</div>-->
+    
+  <div data-role="header" data-position="fixed">
+	<a href="kasi.html" data-icon="arrow-l" data-theme="b" data-transition="slide">Back</a>
+	<h1></h1>
+	
+  </div>
+    
+    
+   <!-- rightpanel2  -->
+
+    
+    
+    <div data-role="content" class="jqm-content">
+    
+        	<div id="loading_panel" style="display:none;text-align:center;">
+            	<b>Please Waiting...!</b>
+                <br><br>
+            	<div class="progress progress-striped active">
+            		<div class="bar" style="width: 100%;"></div>
+        		</div>
+            </div>
+            
+            <div id="required" class="alert alert-danger" style="display:none;text-align:center;">
+                <strong>Your data is not complete</strong>
+             </div>
+             
+             <div id="sukses" class="alert alert-success" style="display:none;text-align:center;">
+                <strong>Your data has been sent</strong>
+             </div>
+            
+            <div id="conn_failed" style="display:none;text-align:center;color:#F00;">
+            	<div class="alert alert-danger">
+                	<strong>Connection Failed...! Please try again</strong>
+            	</div>
+                <br><br><br>
+                <a href="survei.html" data-role="button" data-inline="true" data-icon="check" data-theme="b" data-ajax="false">Back</a>
+            </div>
+            
+            
+    		<div id="formsaran">
+            	<form style="margin-top:-8px;">
+					<label for="pokok_pinjaman">JUMLAH PINJAMAN</label>
+						<select name="pokok_pinjaman" id="pokok_pinjaman" > 
+							<option value="1000000">Rp. 1.000.000</option>
+							<option value="1500000">Rp. 1.500.000</option>
+							<option value="2000000">Rp. 2.000.000</option>
+							<option value="2500000">Rp. 2.500.000</option>
+							<option value="3000000">Rp. 3.000.000</option>
+							<option value="3500000">Rp. 3.500.000</option>
+							<option value="4000000">Rp. 4.000.000</option>
+							<option value="4500000">Rp. 4.500.000</option>
+							<option value="5000000">Rp. 5.000.000</option>
+							<option value="5500000">Rp. 5.500.000</option>
+							<option value="6000000">Rp. 6.000.000</option>
+							<option value="6500000">Rp. 6.500.000</option>
+							<option value="7000000">Rp. 7.000.000</option>
+							<option value="7500000">Rp. 7.500.000</option>
+							<option value="8000000">Rp. 8.000.000</option>
+							<option value="8500000">Rp. 8.500.000</option>
+							<option value="9000000">Rp. 9.000.000</option>
+							<option value="9500000">Rp. 9.500.000</option>
+							<option value="10000000">Rp. 10.000.000</option>
+						</select>
+			
+					<label for="jangka_waktu">JANGKA WAKTU</label>
+						<select name="jangka_waktu" id="jangka_waktu" > 
+							<option value="12">12 Bulan</option>
+							<option value="24">24 Bulan</option>
+							<option value="36">36 Bulan</option>
+						</select>
+
+                 <p>
+                 	<a href="#" id="proses" data-role="button" data-inline="true" data-icon="check" data-theme="b" data-ajax="false">Submit</a>
+                </p>
+				</form>
+            </div>
+          
+            
+    </div><!-- /content -->
+    
+    <div id="loading" style="text-align:center;font-weight:bold;visibility:hidden;">Checking Data...!</div>
+    
+    
+    
+    <div data-role="panel" class="jqm-nav-panel jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="c">
+        <ul data-role="listview" data-theme="d" data-divider-theme="a" class="jqm-list">
+			<li><a href="kasi.html" data-rel="page" data-transition="slide" data-inline="true"><img src="css/menu/gmail.png" class="ui-li-icon ui-corner-none">Permohonan Baru</a></li>
+			<li><a href="setuju.html" data-rel="page" data-transition="slide" data-inline="true"><img src="css/menu/gmail.png" class="ui-li-icon ui-corner-none">Survei</a></li>
+		</ul>
+    </div><!-- /panel -->
+    
+    
+
+</div><!-- /page -->
+</body>
+</html>
